@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <script src="https://use.fontawesome.com/33fec1c70d.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Timer</title>  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      
+</head>
+
+<body>
+  <h1>Countdown Clock</h1>
+<div class="container-fluid">
+  <div class="row">   
+    <div id="clockdiv">
+      <a class="btn" onclick="removeMinute()">
+        <i class="fa fa-minus fa-2x" aria-hidden="true" id = "button"></i>
+      </a>
+      <div>
+        <span class="hours">00</span>
+        <div class="smalltext">Hours</div>
+      </div>
+      <div>
+        <span class="minutes">25</span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span class="seconds">00</span>
+        <div class="smalltext">Seconds</div>
+      </div>
+      <a class="btn" onclick="addMinute()"">
+        <i class="fa fa-plus fa-2x" aria-hidden="true" id = "button"></i>
+      </a>
+    </div>
+  </div>
+</div>  
+
+<div>
+<a class="btn" onclick="startTimer()"">
+  <i class="fa fa-play fa-2x" aria-hidden="true" id = "button"></i>
+</a>
+<a class="btn" onclick="resetTimer()"">
+  <i class="fa fa-refresh fa-2x" aria-hidden="true" id = "button"></i>
+</a>
+</div>
+
+<div id = "status" class = "animated pulse infinite"></div>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
